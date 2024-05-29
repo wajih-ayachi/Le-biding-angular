@@ -1,0 +1,15 @@
+<div>
+
+<ul>
+    <li>Pommes de terre</li>
+    <li [ngStyle]="{backgroundColor:isThisIngredientVital ? 'red' : 'yellow'}">Raclette</li>
+    <li>Jambon</li>
+    <li [ngClass]="{'vital': isThisIngredientVital}">Cornichons</li>
+    <li>Chou-fleur</li>
+</ul>
+ <button>View</button><button [ngStyle]="{backgroundColor:isAdmin ? 'red' : 'yellow'}" *ngIf="isAdmin">Edit</button>
+ <h3 [ngStyle]="{backgroundColor:isAdmin ? 'red' : 'yellow'}" >Mr Pogoda</h3>
+<button (click)="changeRole()">changer</button>
+
+
+</div>
